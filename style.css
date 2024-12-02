@@ -1,0 +1,583 @@
+/* adding styling for the overall main html*/
+/* overscroll-behavior to keep footer and nav in their place*/
+:root {
+  overscroll-behavior: none;
+}
+
+body {
+  background-color: #292929;
+  min-height: 100vh;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* styling the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #292929 !important; /* had to add important as if I didn't the colour wasn't applying to the page  */
+  padding: 10px 20px;
+  border-bottom: 1px solid #29c1c4; /* adding teal blue */
+}
+
+/* Navbar Brand and Links */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  font-size: 1.25rem;
+  color: #29c1c4 !important; /* again adding important to make sure is not missed in the css */
+}
+
+
+.navbar-brand {
+  background-color: #292929; /* matching the dark grey colour of the theme set to the website */
+  padding: 5px;
+}
+
+/* Styling for the menu button and the section */
+.navbar-toggler {
+  background-color: #29c1c4; /* adding the blue as the colour for the menu button */
+  border-color: white; /* adding white to make it stand out  */
+}
+
+/* styling for the logo as it needs adjusting */
+.navbar-brand img {
+  width: 150px; /* adjusting the logo so is big enough */
+  height: 85px;
+}
+
+/* Styling for Navbar Collapse (Menu Section) */
+.navbar-collapse {
+  background-color: #292929; /*  adding the same dark grey to the code so it matches the menu section when expanded */
+  border-top: 1px solid #29c1c4; /* adding a border of blue to draw a separation */
+}
+
+/* Styling the buttons of both the Sign Up and the Sign in  */
+.btn-primary,
+.btn-outline-primary {
+  background-color: #29c1c4; /* adding the same blue for the buttons*/
+  border-color: #29c1c4; /* adding blue for the borders as for personal preference */
+  color: white; /* white writting for the sign up & sign in as it stand out more with the blue*/
+  font-weight: bold;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: #24b1b3; /* a shade darker of the blue so when you hover over it it goes a different colour */
+  color: white;
+  border-color: white;
+}
+
+/* Styling of the hero section  */
+.hero {
+  height: 100vh; /*  height to make the hero image take up most of the screen screen */
+  position: relative;
+  overflow: hidden; /* adding overflow so it doesn't overlap the image content */
+  padding-top: 80px; /* accommodating the fixed navbar */
+}
+
+/* Styling the image for the hero section */
+.hero-image {
+  width: 100%; /* adding the desire height for the photo */
+  height: 100%; /* adding the desired width for the photo  */
+  object-fit: cover; /* this is making sure that the image fits right and it doesn't distort */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Keep image behind the text */
+}
+
+
+
+
+/* Styling for the Hero Text */
+.hero-text {
+  position: absolute; /* adding this so that the hero text fits in the hero photo */
+  top: 50%; /* adjusting the position of the image vertically in the center */
+  left: 50%; /* adjusting the image to be horizontally in the center */
+  transform: translate(-50%, -50%); /* Fine-tune the centering */
+  z-index: 2; /* Adding z-index so the text appears on top of the image*/
+  text-align: center;
+  color: #ffffff; /* white text as is stands out more and it matches the theme */
+  padding: 20px; /* adding padding for when the website is on smaller screens */
+}
+
+.hero-text h1 {
+  font-size: 3rem; /* Increase font size for the h1 to be larger than p */
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.5rem; /* Set smaller font size for the paragraph */
+  color: white;
+}
+
+
+/* Styling the Hero Carousel Section */
+#hero-carousel {
+    width: 150vw; /* Make carousel fill the entire viewport width */
+    margin: 0; /* Remove any default margin */
+    position: relative; /* Allow proper positioning for controls */
+    left: 50%;
+    transform: translateX(-50%); /* Center the element horizontally */
+    max-width: 100%; /* Prevent overflow */
+}
+
+#hero-carousel .carousel-item img {
+    width: 150vw; /* Ensure the images take the entire width of the viewport */
+    height: 75vh; /* Adjust to your preferred height */
+    object-fit: cover; /* Cover the space without distorting the image */
+}
+
+
+/* Styling the Services Section */
+.services {
+  padding: 60px 20px;
+  background-color: #1f1f1f; /* Slightly lighter dark grey for better contrast */
+  margin: 40px 0;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Larger font for emphasis */
+  color: #29c1c4; /* Teal color for better contrast and to draw attention */
+  text-transform: uppercase; /* Uppercase for distinct headings */
+}
+
+.service-item {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #292929; /* Darker grey to contrast with the section */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow to make the service item pop */
+}
+
+.service-item h3 {
+  text-align: center;
+  font-size: 1.75rem; /* Bigger subheading for readability */
+  color: #ffffff; /* White for contrast */
+  margin-bottom: 20px;
+}
+
+.service-item ul {
+  list-style: disc inside;
+  line-height: 1.8;
+  color: #d3d3d3; /* Light grey for list items to enhance readability */
+}
+
+
+
+
+/* Styling the Q&A Section with a Background Image */
+.qa-section {
+    padding: 60px 20px;
+    background-image: url('photos/gym2.jpg'); /* adding for path for the photo as background of Q&A*/
+    background-size: cover; /* making it so it covers the whole area */
+    background-position: center; /* Centering the image */
+    background-repeat: no-repeat; /* adding this so it prevents is from repeating */
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow to give depth */
+    position: relative; /* Needed for adding overlays if desired */
+}
+
+/* Styling the Q&A Section Heading */
+.qa-section h2 {
+    color: #29c1c4; /* Changed the color to white */
+  font-size: 2.8rem
+}
+
+
+/* Making Sure Content Stays Above the Overlay */
+.qa-section > * {
+    position: relative;
+    z-index: 2; /* Make sure the text is above the overlay */
+}
+
+
+.qa-section .qa-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #292929; /*  grey to match the theme */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* adding shadow  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.qa-section .qa-item:hover {
+    transform: translateY(-5px); /* adding lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Slightly stronger shadow on hover */
+}
+
+/* Styling for Questions in Q&A Section */
+.qa-section .qa-question {
+    font-size: 1.5rem;
+    color: white; /* white color to add contrast */
+    text-decoration: none;
+    cursor: pointer;
+    display: block; /* Display as block for full-width clickable area */
+    margin-bottom: 10px;
+}
+
+/* adding styling for the collapse secion */
+.qa-section .collapse {
+    background-color: #444444; /* darker grey to differentiate answers from the questions */
+    padding: 20px;
+    border-radius: 10px; 
+    margin-bottom: 10px; /* creating separation from each question*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+}
+
+/* Styling the answers in Q&A Section */
+.qa-section .qa-answer {
+    font-size: 1.1rem;
+    color: white; /* white for better readability */
+    line-height: 1.8; /* Adjust line height for better readability */
+}
+
+/* Icons for Expand/Collapse State in Q&A Section */
+.qa-section .qa-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: white; /* white color to match the text */
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.qa-section .qa-item.open .qa-question::after {
+    content: '-';
+}
+
+
+/* Styling for the footer section  */
+footer {
+  background-color: #292929; /* dark grey for footer */
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #29c1c4; /* White border for separation */
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  color: white; /* White text content */
+}
+
+
+/*  Styling for About Page */
+
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("photos/close-up-pipes.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+}
+
+.trainer-card {
+  transition: transform 0.3s ease; /* setting transform to achieve hover effect duration and smoothness in movement*/
+  background-color: #29c1c4; /* adding the same blue for the buttons*/
+  border-color: #29c1c4; /* adding blue for the borders as for personal preference */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.trainer-card:hover {
+  /* setting translate to achieve hover effect how it is going to move */
+  transform: translateY(-10px);
+  background-color: #24b1b3; /* a shade darker of the blue so when you hover over it it goes a different colour */
+  color: white;
+  border-color: white;
+}
+
+
+/*  Styling for Contact Page */
+
+.contact-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("photos/modern-gym-interior-with-equipment.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+}
+
+.contact-info-card {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.btn {
+  background-color: #29c1c4; /* adding the same blue for the buttons*/
+  border-color: #29c1c4; /* adding blue for the borders as for personal preference */
+}
+
+.btn:hover {
+  background-color: #24b1b3; /* a shade darker of the blue so when you hover over it it goes a different colour */
+  color: white;
+  border-color: white;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+/*starting the styling of the pricing */
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap; /* wrapping the price boxes to is responsive */
+  gap: 20px;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a; /* Lighter than hero section for differentiation */
+  margin: 40px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-box {
+  background-color: #333333; /* Dark grey for the card box */
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 350px; /* Keep cards compact */
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(41, 193, 196, 0.4); /* Teal shadow effect */
+  border: 2px solid #29c1c4; /* Teal border for distinction */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.pricing-box:hover {
+  transform: translateY(-10px); /* adding some effects to hover */
+  box-shadow: 0px 8px 20px rgba(41, 193, 196, 0.6); /* using a different colour  on hover */
+}
+
+.pricing-box h3 {
+  color: #29c1c4; /* Teal blue to make it stand out and it matches the page */
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* using upper cases to emphazise  */
+}
+
+.pricing-box p {
+  color: #ffffff; /* using white for more contrast */
+  font-size: 1.1rem;
+}
+
+.price p {
+  font-size: 2rem; /* bigger text to highlight  the prices*/
+  color: #ffffff; /* using white as it stands out more */
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 1rem; /* putting smaller font for additional fee info */
+  color: #aaaaaa;
+}
+
+.details, .price-options {
+  list-style-type: none; /* taking away the default bullet points set */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.details li, .price-options li {
+  font-size: 1.1rem; /* making it bigger so is easier to read*/
+  color: #d3d3d3; /* adding light grey so it stand out when reading it  */
+  margin: 10px 0;
+}
+
+.join-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #29c1c4; /* adding the teal blue to match the theme */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* adding some animation */
+}
+
+.join-btn:hover {
+  background-color: #24b1b3; /* Darker teal for hover */
+  box-shadow: 0 5px 15px rgba(36, 177, 179, 0.4);
+}
+
+/* General Section Spacing */
+section {
+  padding: 40px 0;
+}
+
+
+
+/*
+Style.css  Sign In and Sign Up Pages
+Jason Osondu Nsonwu-duru
+Student No. 19224346
+Web Design CA2 (Group Project)
+25.11.2024
+*/
+
+/*Main container*/
+.auth-container {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #292929;
+  margin-top: 100px; /*compensate for fixed navbar*/
+  margin-bottom: 60px;
+}
+
+/*Form box*/
+.auth-box {
+  background-color: #333333;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(41, 193, 196, 0.3);
+  border: 1px solid #29c1c4;
+}
+
+/*Heading*/
+.auth-box h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/*Form group*/
+.form-group {
+  margin-bottom: 20px;
+}
+
+/*Label*/
+.form-group label {
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/*Input field*/
+.auth-box .form-control {
+  background-color: #292929;
+  border: 1px solid #29c1c4;
+  color: white;
+  padding: 10px;
+}
+
+.auth-box .form-control:focus {
+  background-color: #292929;
+  border-color: #24b1b3;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(41, 193, 196, 0.25);
+}
+
+/*Help text*/
+.form-text {
+  color: #aaaaaa;
+}
+
+/*Button*/
+.auth-box .btn-primary {
+  margin-top: 10px;
+}
+
+/*Link*/
+.auth-box a {
+  color: #29c1c4;
+  text-decoration: none;
+}
+
+.auth-box a:hover {
+  color: #24b1b3;
+  text-decoration: underline;
+}
+
+/*Text*/
+.auth-box p {
+  color: white;
+  margin: 0;
+}
+
+/*Error message*/
+.error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  display: none;
+}
+
+/*Payment information section*/
+.auth-box .form-group{
+	margin-bottom: 15px; /*Slightly reduces the margin for tighter form*/
+}
+
+.auth-box .form-group label{
+	margin-bottom:3px;
+	font-size:0.9rem;
+}
+
+/*Card details row styling*/
+.auth-box .row{
+	margin-bottom:15px;
+}
+
+.auth-box .row .form-group{
+	margin-bottom:0;
+}
+
+/*additional focus states for card-related inputs*/
+.auth-box .form-control[type="text"],
+.auth-box .form-control[type="email"],
+.auth-box .form-control[type="password"]{
+	transition:border-color0.2s ease;
+}
+
+/*Payment-related inputs to match overall theme*/
+#cardName,
+#cardNumber,
+#cardExpiry,
+#cardCVV{
+	background-color:#292929;
+	border:1px solid #29c1c4;
+	color:white;
+}
+
+#cardName:focus,
+#cardNumber:focus,
+#cardExpiry:focus,
+#cardCVV:focus{
+	border-color:#24b1b3;
+	box-shadow:0 0 0 0.2rem rgba(41, 193, 196, 0.25);
+}
+
+/*Small text for card input hints*/
+.auth-box .form-text{
+	color:#aaaaaa;
+	font-size:0.7rem;
+	margin-top:3px;
+}
