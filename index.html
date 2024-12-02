@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>
+
+    <title>NCI GYM</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar from bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Adding the NCI logo to the website-->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="photos/logo.png" alt="NCI GYM Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+            </a>
+
+            <!-- adding the menu button for the smaller screen so everything collapses into the button  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- adding the links for the other pages as well as buttons -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- aligning the links to the left side of the page otherwise it goes to the center -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- putting the sign up & sign up to the right side -->
+                <div class="d-flex">
+                    <a href="SignUp.html" class="btn btn-primary me-2">Sign Up</a>
+                    <a href="SignIn.html" class="btn btn-outline-primary">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- starting with the main section of the website -->
+    <main>
+         <!-- adding a hero section and placing a large image with some text on top of it  -->
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+    <!-- adding the photo to the website -->
+    <img src="photos/gym.jpg" alt="NCI GYM Hero Image" class="hero-image img-fluid mb-4">
+    
+    <!-- adding the text on top of the photo-->
+    <div class="hero-text">
+        <h1>Small Steps Equal Big Changes</h1>
+        <p>NCI students have access to SV Fitness Health Club, which offers excellent fitness facilities to its members.</p>
+    </div>
+</section>
+
+
+        <section class="services">
+       <!-- heading of the services provided by NCI-->
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>NCI Gym offers the following:</h3>  <!-- subheading of the services provided by NCI-->
+                <ul>  <!-- using ul to creat a list -->
+                    <li>Treadmills, arc-trainer, rowing machines, bikes, steppers.</li>
+                    <li>Machine weights and free weights</li>
+                    <li>Aerobics and Spinning Studio</li>
+                    <li>Classes held daily (all included in the price)</li>
+                    <li>Free assessment to aid you in achieving your goal</li>
+                    <li>Changing rooms: individual showers in each, hair dryers, lockers, stand-up sunbed</li>
+                    <li>Sauna and steam rooms</li>
+                </ul>
+            </div>
+
+
+<!-- Hero Carousel Section -->
+<section id="hero-carousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="photos/gym3.png" class="d-block w-100" alt="Hero Image 1">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="photos/gym4.png" class="d-block w-100" alt="Hero Image 2">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="photos/gym6.png" class="d-block w-100" alt="Hero Image 3">
+            
+        </div>
+        <div class="carousel-item">
+            <img src="photos/gym7.png" class="d-block w-100" alt="Hero Image 3">
+            
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</section>
+
+
+
+
+            <div class="pricing-container">
+        <!-- adding membership Box -->
+        <div class="pricing-box">
+            <h3>None Student Membership</h3>
+            <p>Access to NCI gym</p>
+            <div class="price">
+                <p>€45 <span>+ €20 Joining Fee</span></p>
+            </div>
+            <ul class="details">
+                <li>€150 - 3x Monthly + €20 Joining Fee</li>
+                <li>€300 - Annually + €20 Joining Fee</li>
+            </ul>
+               <a href="javascript:void(0)" class="join-btn" onclick="promptCardDetails()">Get Membership</a>
+        </div>
+
+        <!-- adding student membership Box -->
+        <div class="pricing-box">
+            <h3>Student Membership</h3>
+            <p>Access to NCI Gym</p>
+            <div class="price">
+                <p>€15 <span>+ €20 Joining Fee</span></p>
+            </div>
+            <ul class="details">
+                <li>€50 - 3x Monthly + €20 Joining Fee</li>
+                <li>€150 - Annually + €20 Joining Fee</li>
+            </ul>
+              <a href="javascript:void(0)" class="join-btn" onclick="promptCardDetails()">Get Membership</a>
+        </div>
+
+        <!-- adding pay As You Go Box -->
+        <div class="pricing-box">
+            <h3>Pay As You Go</h3>
+            <p>1, 2 or 3 day pass to be used within 30 days</p>
+            <ul class="price-options">
+                <li>€8 - 1 day</li>
+                <li>€20 - 2 days</li>
+                <li>€26 - 3 days</li>
+            </ul>
+               <a href="javascript:void(0)" class="join-btn" onclick="promptCardDetails()">Get Day Pass</a>
+        </div>
+    </div>
+
+
+
+
+
+
+<section class="qa-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <!-- Q&A Item 1 -->
+    <div class="qa-item">
+       <h3>
+            <a class="qa-question" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                Where is the gym located?
+            </a>
+        </h3>
+        <div class="collapse" id="collapseOne">
+            <p class="qa-answer">The gym is located to the rear of NCI. Students can get to it in 2 ways:
+                Option 1: Exit NCI through the main door, take a right down the road towards Fresh. After Fresh, take another right and SV Fitness is just up the right-hand side.
+                Or
+                Option 2: From the atrium, students should walk through the quad, exiting through the turnstile. SV fitness can be found just to the left of the turnstile.
+            </p>
+        </div>
+    </div>
+
+    <!-- Q&A Item 2 -->
+    <div class="qa-item">
+        <h3>
+           <a class="qa-question" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                Can I freeze my membership?
+            </a>
+        </h3>
+        <div class="collapse" id="collapseTwo">
+            <p class="qa-answer">Yes, you can freeze your membership for a maximum of 3 months per year at no additional cost. Please contact our front desk for more details.</p>
+        </div>
+    </div>
+
+    <!-- Q&A Item 3 -->
+    <div class="qa-item">
+        <h3>
+            <a class="qa-question" data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                When does the gym membership end?
+            </a>
+        </h3>
+        <div class="collapse" id="collapseThree">
+            <p class="qa-answer">For September start students, the membership goes from September to 31st August the following year (1 academic year). For January start students, gym memberships go from the start date of your course until 31st December. For non-students, the membership is valid for 1 year from the day you start.</p>
+        </div>
+    </div>
+
+    <!-- Q&A Item 4 -->
+    <div class="qa-item">
+        <h3>
+            <a class="qa-question" data-bs-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+                What do I do if SV Fitness says I’m not on the current active students list?
+            </a>
+        </h3>
+        <div class="collapse" id="collapseFour">
+            <p class="qa-answer">All full-time undergrads must pay their gym fee before they can access the gym. If you have done so but are being told you are not on their list, please let us know by submitting a request to Student Support through the Support Hub.</p>
+        </div>
+    </div>
+
+    <!-- Q&A Item 5 -->
+    <div class="qa-item">
+        <h3>
+           <a class="qa-question" data-bs-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+                I’m a full-time student who has a medical condition or disability that prevents me from being able to use the gym. Do I have to pay the gym fee?
+            </a>
+        </h3>
+        <div class="collapse" id="collapseFive">
+            <p class="qa-answer">If a student has a medical condition or disability that prevents them from using the gym, they can apply for special dispensation from the gym membership. Requests should be submitted through the Support Hub.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Fadding a footer as an extra since a lot of gyms have this  -->
+    <footer>
+        <p>&copy; 2024 NCI GYM</p>  
+    </footer>
+
+    <!-- adding the bootstrap JS link needed  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- linking the prompt of the get a pass to the javascript file -->
+     <script src="customjs.js"></script>
+
+</body>
+</html>
