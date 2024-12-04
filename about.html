@@ -1,0 +1,222 @@
+<!-- 
+NCI Gym About Page
+CA Group Project
+Carlos Briceno
+27/11/2024 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - NCI Gym</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar from bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Adding the NCI logo to the website-->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="photos/logo.png"
+            alt="NCI GYM Logo"
+            width="40"
+            height="40"
+            class="d-inline-block align-text-top me-2"
+          />
+        </a>
+
+        <!-- adding the menu button for the smaller screen so everything collapses into the button  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- adding the links for the other pages as well as buttons -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- aligning the links to the left side of the page otherwise it goes to the center -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- putting the sign up & sign up to the right side -->
+          <div class="d-flex">
+            <a href="SignUp.html" class="btn btn-primary me-2">Sign Up</a>
+            <a href="SignIn.html" class="btn btn-outline-primary">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <!-- Display flex, items aligned center. about-hero defined in style.css -->
+    <section class="about-hero d-flex align-items-center">
+      <!-- Container and text-center Bootstrap classes -->
+      <div class="container text-center">
+        <!-- display-2 for different sizes and fw-bold for font weight options  Bootstrap classes-->
+        <h1 class="display-2 fw-bold">About NCI Gym</h1>
+        <!-- lead bootstrap class, paragraph stands out from regular paragraphs -->
+        <p class="lead">Building Stronger Bodies and Minds Since 2024</p>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <!-- py bootstrap class for vertical padding (y axis) -->
+    <section class="py-5">
+      <div class="container">
+        <!-- row bootstrap class and items aligned center -->
+        <div class="row align-items-center">
+          <!-- Defining colums size 6 here when large devices -->
+          <div class="col-lg-6">
+            <!-- Margin Bottom bootstrap class -->
+            <h2 class="mb-4">Our Story</h2>
+            <!-- lead bootstrap class, paragraph stands out from regular paragraphs -->
+            <p class="lead mb-4">
+              Founded out of the necessity for fitness and wellness for our
+              students, NCI Gym has grown into a community of dedicated fitness
+              enthusiasts and professional trainers.
+            </p>
+            <!-- Margin Bottom bootstrap class -->
+            <p class="mb-4">
+              NCI Gym is the newest and most up to date club now open in the
+              heart of the IFSC, based in the NCI and around the corner from
+              Fresh, NCI Gym is a private health and fitness club like no other.
+            </p>
+            <!-- Margin Bottom bootstrap class -->
+            <p class="mb-4">
+              As part of NCI's campus, our gym complements the college's
+              commitment to providing a complete educational experience. Whether
+              you're a business student, or computing enthusiast, our facility
+              is designed to support your physical well-being alongside your
+              academic journey.
+            </p>
+          </div>
+          <!-- Defining colums size 6 here when large devices for 12 in total -->
+          <div class="col-lg-6">
+            <!-- img-fluid. This applies max-width: 100%; and height: auto -->
+            <img
+              src="photos/group-young-people-training-gym-indoors-maintaining-sportive-lifestyle.jpg"
+              alt="Gym Interior"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- py bootstrap class for vertical padding (y axis) -->
+    <section class="py-5">
+      <!-- Container Bootstrap class -->
+      <div class="container">
+        <!-- Margin bottom and text-center Bootstrap classes -->
+        <h2 class="text-center mb-5">Our Expert Trainers</h2>
+        <!-- row bootstrap class and g class for spacing between colums -->
+        <div class="row g-4">
+          <!-- Defining colums size 4 here when medium devices -->
+          <div class="col-md-4">
+            <div class="card trainer-card">
+              <!-- card-img-top places an image to the top of the card -->
+              <img
+                src="photos/female-boxer-sportswear-holds-protective-helmet-looking-camera-isolated-dark-textured-background.jpg"
+                class="card-img-top"
+                alt="Trainer 1"
+              />
+              <!-- Card Bootstrap class for shape in general, tariner-card definef in style.css -->
+              <div class="card-body text-center">
+                <!-- Heading  Bootstrap classe -->
+                <h3 class="h4">Danna Munoz</h3>
+                <!-- text-muted class sets the color of the text to a muted or faded shade of gray by default. -->
+                <p class="text-muted">Strength Training Expert</p>
+                <!-- small represents side-comments and small print, like copyright and legal text. -->
+                <p class="small">
+                  Certified personal trainer with 10+ years of experience in
+                  strength and conditioning.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Defining colums size 4 here when medium devices -->
+          <div class="col-md-4">
+            <!-- Card Bootstrap class for shape in general, tariner-card definef in style.css -->
+            <div class="card trainer-card">
+              <!-- card-img-top places an image to the top of the card -->
+              <img
+                src="photos/female-boxer-sportswear-holds-protective-helmet-looking-camera-isolated-dark-textured-background.jpg"
+                class="card-img-top"
+                alt="Trainer 2"
+              />
+              <!-- Card-body bootstrap class for body of the card and text-center class -->
+              <div class="card-body text-center">
+                <!-- Heading  Bootstrap class -->
+                <h3 class="h4">Carlos Briceno</h3>
+                <!-- text-muted class sets the color of the text to a muted or faded shade of gray by default. -->
+                <p class="text-muted">Yoga Instructor</p>
+                <!-- small represents side-comments and small print, like copyright and legal text. -->
+                <p class="small">
+                  Specialized in Vinyasa and Power Yoga with 8 years of teaching
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Defining colums size 4 here when medium devices -->
+          <div class="col-md-4">
+            <!-- Card Bootstrap class for shape in general, tariner-card definef in style.css -->
+            <div class="card trainer-card">
+              <!-- card-img-top places an image to the top of the card -->
+              <img
+                src="photos/female-boxer-sportswear-holds-protective-helmet-looking-camera-isolated-dark-textured-background.jpg"
+                class="card-img-top"
+                alt="Trainer 3"
+              />
+              <!-- Card-body bootstrap class for body of the card and text-center class -->
+              <div class="card-body text-center">
+                <!-- Heading  Bootstrap class -->
+                <h3 class="h4">Jason Osondu Nsonwu-Duru</h3>
+                <!-- text-muted class sets the color of the text to a muted or faded shade of gray by default. -->
+                <p class="text-muted">CrossFit Coach</p>
+                <!-- small represents side-comments and small print, like copyright and legal text. -->
+                <p class="small">
+                  Level 3 CrossFit trainer with extensive experience in
+                  functional fitness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fadding a footer as an extra since a lot of gyms have this  -->
+    <footer>
+      <p>&copy; 2024 NCI GYM</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!-- 
+NCI Gym Contact Page
+CA Group Project
+Carlos Briceno
+27/11/2024 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - NCI Gym</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar from bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Adding the NCI logo to the website-->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="photos/logo.png"
+            alt="NCI GYM Logo"
+            width="40"
+            height="40"
+            class="d-inline-block align-text-top me-2"
+          />
+        </a>
+
+        <!-- adding the menu button for the smaller screen so everything collapses into the button  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- adding the links for the other pages as well as buttons -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- aligning the links to the left side of the page otherwise it goes to the center -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- putting the sign up & sign up to the right side -->
+          <div class="d-flex">
+            <a href="SignUp.html" class="btn btn-primary me-2">Sign Up</a>
+            <a href="SignIn.html" class="btn btn-outline-primary">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <!-- Display flex, items aligned and margin botton 5. Contact-hero defined in style.css -->
+    <section class="contact-hero d-flex align-items-center mb-5">
+      <!-- Container and text-center Bootstrap classes -->
+      <div class="container text-center">
+        <!-- display-2 for different sizes and fw-bold for font weight options  Bootstrap classes-->
+        <h1 class="display-2 fw-bold">Contact Us</h1>
+        <!-- lead bootstrap class, paragraph stands out from regular paragraphs -->
+        <p class="lead">Get in touch with our team</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- py bootstrap class for vertical padding (y axis) -->
+    <section class="py-5">
+      <div class="container">
+        <!-- row bootstrap class and g class for spacing between colums -->
+        <div class="row g-5">
+          <!-- Contact Information -->
+          <!-- Defining colums size 4 here when large devices -->
+          <div class="col-lg-4">
+            <!-- Card Bootstrap class for shape in general, contact-info-card definef in style.css, height and padding bootstrap classes -->
+            <div class="card contact-info-card h-100 p-4">
+              <!-- Card-body bootstrap class for body of the card  -->
+              <div class="card-body">
+                <!-- Card-title bootstrap class for title of the card, heading and margin botoom bootstrap classes  -->
+                <h3 class="card-title h4 mb-4">Contact Information</h3>
+                <!-- Display flex, items aligned and margin botton 3.  -->
+                <div class="d-flex align-items-center mb-3">
+                  <!-- Bi bootstrap icon base class, bi-(iconName) specific icon class and me for right margin for icons -->
+                  <i class="bi bi-geo-alt-fill me-3"></i>
+                  <div>
+                    <!-- Heading and margin bottom Bootstrap classes -->
+                    <h4 class="h6 mb-1">Address</h4>
+                    <p class="mb-0">Mayor Square, IFSC, Dublin 1</p>
+                  </div>
+                </div>
+                <!-- Display flex, items aligned and margin botton 3.  -->
+                <div class="d-flex align-items-center mb-3">
+                  <!-- Bi bootstrap icon base class, bi-(iconName) specific icon class and me for right margin for icons -->
+                  <i class="bi bi-telephone-fill me-3"></i>
+                  <div>
+                    <!-- Heading and margin bottom Bootstrap classes -->
+                    <h4 class="h6 mb-1">Phone</h4>
+                    <p class="mb-0">+353 1 234 5678</p>
+                  </div>
+                </div>
+                <!-- Display flex, items aligned and margin botton 3.  -->
+                <div class="d-flex align-items-center mb-3">
+                  <!-- Bi bootstrap icon base class, bi-(iconName) specific icon class and me for right margin for icons -->
+                  <i class="bi bi-envelope-fill me-3"></i>
+                  <div>
+                    <!-- Heading and margin bottom Bootstrap classes -->
+                    <h4 class="h6 mb-1">Email</h4>
+                    <p class="mb-0">gym@ncirl.ie</p>
+                  </div>
+                </div>
+                <!-- Display flex, items aligned   -->
+                <div class="d-flex align-items-center">
+                  <!-- Bi bootstrap icon base class, bi-(iconName) specific icon class and me for right margin for icons -->
+                  <i class="bi bi-clock-fill me-3"></i>
+                  <div>
+                    <!-- Heading and margin bottom Bootstrap classes -->
+                    <h4 class="h6 mb-1">Opening Hours</h4>
+                    <p class="mb-0">
+                      Mon-Fri: 7:00 AM - 9:30 PM<br />
+                      Sat-Sun: 10:00 AM - 2:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <!-- Defining colums size 8 here when large devices for a total of 12 colums-->
+          <div class="col-lg-8">
+            <!-- Card Bootstrap class for shape in general, contact-info-card definef in style.css, height and padding bootstrap classes -->
+            <div class="card contact-info-card h-100 p-4">
+              <!-- Card-body bootstrap class for body of the card  -->
+              <div class="card-body">
+                <!-- Card-title bootstrap class for title of the card, heading and margin botoom bootstrap classes  -->
+                <h3 class="card-title h4 mb-4">Send Us a Message</h3>
+                <form id="contactFormGym">
+                  <!-- row bootstrap class and g class for spacing between colums -->
+                  <div class="row g-3">
+                    <!-- Defining colums size 6 here when medium devices-->
+                    <div class="col-md-6">
+                      <!-- Form-floating creates floating label effect, margin bottom class -->
+                      <div class="form-floating mb-3">
+                        <!-- Form-control for basic form input styling -->
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                          required
+                        />
+                        <label for="name">Your Name</label>
+                      </div>
+                    </div>
+                    <!-- Defining colums size 6 here when medium devices-->
+                    <div class="col-md-6">
+                      <!-- Form-floating creates floating label effect, margin bottom class -->
+                      <div class="form-floating mb-3">
+                        <!-- Form-control for basic form input styling -->
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="name@example.com"
+                          required
+                        />
+                        <label for="email">Email Address</label>
+                        <span id="emailError" class="error"></span>
+                      </div>
+                    </div>
+                    <!-- Defining colums size 12 here when mobile-->
+                    <div class="col-12">
+                      <!-- Form-floating creates floating label effect, margin bottom class -->
+                      <div class="form-floating mb-3">
+                        <!-- Form-control for basic form input styling -->
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject"
+                          required
+                        />
+                        <label for="subject">Subject</label>
+                      </div>
+                    </div>
+                    <!-- Defining colums size 12 here when mobile-->
+                    <div class="col-12">
+                      <!-- Form-floating creates floating label effect, margin bottom class -->
+                      <div class="form-floating mb-3">
+                        <!-- Form-control for basic form input styling -->
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          placeholder="Your Message"
+                          style="height: 150px"
+                          required
+                        ></textarea>
+                        <label for="message">Your Message</label>
+                      </div>
+                    </div>
+                    <!-- Defining colums size 12 here when mobile-->
+                    <div class="col-12">
+                      <!-- Btn for base button class, some styles in style.css and px for hoirizontal padding (x axis) -->
+                      <button type="submit" class="btn px-5">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fadding a footer as an extra since a lot of gyms have this  -->
+    <footer>
+      <p>&copy; 2024 NCI GYM</p>
+    </footer>
+
+    <!-- Bootstrap Icons and JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="CustomJs.js"></script>
+  </body>
+</html>
